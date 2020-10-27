@@ -12,17 +12,17 @@ function drawClock(){
   drawAllHands();
   drawOrigin();
 }
-drawHours();
-function drawHours(){
-  for(let i=1; i<13;i++){
-    canvas.add(new fabric.Text(i.toString(), { 
-        fontFamily: 'Delicious_500', 
-        left: 100, 
-        top: Math.random(i),
-        fontSize:25
-      }));
-  }
-}
+// drawHours();
+// function drawHours(){
+//   for(let i=1; i<13;i++){
+//     canvas.add(new fabric.Text(i.toString(), { 
+//         fontFamily: 'Delicious_500', 
+//         left: 100, 
+//         top: Math.random(i),
+//         fontSize:25
+//       }));
+//   }
+// }
 
 
 function drawOrigin(){
@@ -41,7 +41,7 @@ function drawDial(){
         fill:'white', 
         left:467, 
         top:97,
-        stroke:"black",
+        stroke:"grey",
         strokeWidth:15,
     });
     canvas.add(circle);
